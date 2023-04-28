@@ -1,0 +1,80 @@
+[14:14, 4/28/2023] +91 6309 417 492: phrase = input("Type in: ")
+phrase_splited = phrase.split(' ')
+
+word_list = []
+for i in phrase_splited:
+    if i not in word_list:
+        word_list.append(i)
+    else:
+        continue
+word_list.sort()
+print((' ').join(word_list))
+##10
+[14:14, 4/28/2023] +91 6309 417 492: nums = list(input("Please enter a 4 digit number made from 0 and 1 : ").split(','))
+res = [num for num in nums if not int(num, 2) % 5]
+
+print(res)
+##11
+[14:14, 4/28/2023] +91 6309 417 492: num = []
+for i in range(1000, 3000):
+ if(i%2==0):
+ 	print (i)
+ 	##12
+[14:14, 4/28/2023] +91 6309 417 492: s = input("Input a string")
+d=l=0
+for i in s:
+    if i.digit():
+        d=d+1
+    elif i.alpha():
+        l=l+1
+    else:
+    	pass
+print("LTTERS", l)
+print("DIGITS", d)
+##13
+[14:14, 4/28/2023] +91 6309 417 492: v= input(" ")
+a1=v*1
+a2=v*2
+a3=v*3
+a4=v*4
+t=int(a1)+int(a2)+int(a3)+int(a4)
+print(t)
+##14
+[14:14, 4/28/2023] +91 6309 417 492: num = input(" ")
+
+odd_list = [i for i in num.split(',') if (int(i) % 2 != 0)]
+print((" ").join(odd_list))
+##15
+[14:14, 4/28/2023] +91 6309 417 492: def lcs(X, Y, m, n):
+ 
+    if m == 0 or n == 0:
+       return 0;
+    elif X[m-1] == Y[n-1]:
+       return 1 + lcs(X, Y, m-1, n-1);
+    else:
+       return max(lcs(X, Y, m, n-1), lcs(X, Y, m-1, n));
+       
+X = "AGGTAB"
+Y = "GXTXAYB"
+print ("Length of LCS is ", lcs(X, Y, len(X), len(Y)))
+##17
+[14:15, 4/28/2023] +91 6309 417 492: def values(n):
+
+    i = 0
+
+    while i<n:
+
+        j=i
+
+        i=i+1
+
+        if j%7==0:
+
+            yield j
+
+
+
+for i in values(100):
+
+    print (i)
+    ##20
