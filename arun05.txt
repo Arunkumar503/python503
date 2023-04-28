@@ -1,0 +1,4 @@
+num = input(" ")
+
+odd_list = [i for i in num.split(',') if (int(i) % 2 != 0)]
+print((" ").join(odd_list))
