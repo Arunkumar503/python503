@@ -1,0 +1,12 @@
+  s = input("Input a string")
+d=l=0
+for i in s:
+    if i.digit():
+        d=d+1
+    elif i.alpha():
+        l=l+1
+    else:
+    	pass
+print("LTTERS", l)
+print("DIGITS", d)
+
